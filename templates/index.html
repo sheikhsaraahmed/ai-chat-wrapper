@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Chat Wrapper</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <!-- ── Top navbar ── -->
+  <nav class="navbar">
+    <div class="nav-logo">⬡ AI CHAT WRAPPER</div>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span>SECURITY ACTIVE</span>
+    </div>
+  </nav>
+
+  <!-- ── Main layout ── -->
+  <div class="layout">
+
+    <!-- ── Left: Chat panel ── -->
+    <div class="panel chat-panel">
+      <div class="panel-header">
+        <span class="panel-title">// CIPHER_BOT</span>
+        <span class="panel-sub">encrypted channel</span>
+      </div>
+
+      <!-- Messages area -->
+      <div class="messages" id="messages">
+        <div class="message bot-message">
+          <span class="msg-label">CIPHER_BOT</span>
+          <p>System online. Secure channel established. How can I assist you?</p>
+        </div>
+      </div>
+
+      <!-- Input area -->
+      <div class="input-area">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Enter message..."
+          autocomplete="off"
+        />
+        <button id="sendBtn" onclick="sendMessage()">SEND</button>
+      </div>
+    </div>
+
+    <!-- ── Right: Attack log panel ── -->
+    <div class="panel log-panel">
+      <div class="panel-header">
+        <span class="panel-title">// THREAT_LOG</span>
+        <button class="clear-btn" onclick="clearLogs()">CLEAR</button>
+      </div>
+
+      <div class="log-stats" id="logStats">
+        <div class="stat">
+          <span class="stat-num" id="totalCount">0</span>
+          <span class="stat-label">TOTAL</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num high" id="highCount">0</span>
+          <span class="stat-label">HIGH</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num medium" id="medCount">0</span>
+          <span class="stat-label">MEDIUM</span>
+        </div>
+      </div>
+
+      <div class="log-entries" id="logEntries">
+        <div class="empty-log">No threats detected yet...</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
