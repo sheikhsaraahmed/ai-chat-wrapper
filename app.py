@@ -6,6 +6,8 @@ from scanner import scan_prompt
 from logger import log_attack, get_logs, clear_logs
 from groq import Groq
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 app = Flask(__name__)
 
