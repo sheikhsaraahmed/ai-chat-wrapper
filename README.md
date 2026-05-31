@@ -49,7 +49,9 @@ ai-chat-wrapper/
 
 ## UI screenshot
 
+![AI Chat Wrapper Chat](assets/screenshot1.png)
 
+![AI Chat Wrapper Threats](assets/screenshot2.png)
 
 ---
 
